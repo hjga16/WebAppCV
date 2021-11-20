@@ -2,11 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Say Hello</title>
+    <title>Hernan Gavilan - BI Developer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-    <img src="https://raw.githubusercontent.com/MariyaSha/SimpleGreetingApp/main/logo.png">
+   <!--<img src="https://raw.githubusercontent.com/MariyaSha/SimpleGreetingApp/main/logo.png">-->
+   <h1>HERNAN GAVILAN</h1>
+   <br>
+   <h2>Business Intelligence Developer</h2>
+
     <br>
     <form action="greet" method="post">
         {% for message in get_flashed_messages() %}
