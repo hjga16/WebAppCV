@@ -4,12 +4,64 @@ body {
 }
 
 p {
-    color: white;
+    color: darkred;
     font-family: Shanti;
     font-size: 1.2em;
     display: inline-block;
     margin:  20px;
 }
+
+
+h1 {
+  display: inline-block;
+  font-size: 3em;
+  margin-top: 150px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: Shanti;
+  color: white;
+}
+
+h2 {
+        display: block;
+        font-family: Shanti;
+        font-style: italic;
+        font-weight: bold;
+        margin:  auto;
+        color:  white;
+        text-align: center;
+        font-size: 1.5em;
+        max-width: 600px;
+        position: relative;
+      }
+      h2:before {
+        content: "";
+        display: block;
+        width: 130px;
+        height: 2px;
+        background: black;
+        left: 0;
+        top: 50%;
+        position: absolute;
+        
+
+      }
+      h2:after {
+        content: "";
+        display: block;
+        width: 130px;
+        height: 2px;
+        background: black;
+        right: 0;
+        top: 50%;
+        position: absolute;
+      }
+
+
+
+
 
 img {
     margin: 60px 0 30px 0;
