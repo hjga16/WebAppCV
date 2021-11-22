@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Hernan Gavilan - BI Developer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for("static", filename="icons/favicon.ico") }}">
+
 </head>
 <body>
    <!--<img src="https://raw.githubusercontent.com/MariyaSha/SimpleGreetingApp/main/logo.png">-->
@@ -12,14 +14,25 @@
    <h2>Business Intelligence Developer</h2>
 
     <br>
+    <a href="https://www.linkedin.com/in/hgavilan" target="_blank"><img src="{{ url_for("static", filename="icons/linkedin.png") }}" alt="" title="www.linkedin.com/in/hgavilan"></a>
+    <a href="mailto: hernan.gavilan@outlook.com" target="_blank"><img src="{{ url_for("static", filename="icons/outlook.png") }}" alt="" title="hernan.gavilan@outlook.com"></a>
+    <br>
+
     <form action="greet" method="post">
-        {% for message in get_flashed_messages() %}
+        <!--{% for message in get_flashed_messages() %}-->
              <p>{{ message }}</p>
-         {% endfor %}
+         <!--{% endfor %}-->
         <br>
         <input type="text" name="name_input">
         <br>
         <input type="submit" value="GREET" id="greet">
     </form>
+    
 </body>
+
+<footer>
+  
+  <p><a href="mailto:hernan.gavilan@outlook.com">Author: hernan.gavilan@outlook.com</a></p>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</footer>
 </html>
