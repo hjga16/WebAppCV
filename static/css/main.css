@@ -23,7 +23,7 @@ h1 {
   font-family: Shanti;
   color: white;
 }
-
+/* Header con linea horizontal centrada */
 h2 {
         display: block;
         font-family: Shanti;
@@ -45,7 +45,7 @@ h2 {
         left: 0;
         top: 50%;
         position: absolute;
-        
+
 
       }
       h2:after {
@@ -58,7 +58,7 @@ h2 {
         top: 50%;
         position: absolute;
       }
-
+/* Header con linea horizontal centrada */
 
 
 
