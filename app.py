@@ -18,6 +18,14 @@ def about():
 def resume():
 	return render_template("resume.html")
 
+@app.route("/portfolio", methods=['GET', 'POST'])
+def portfolio():
+	return render_template("portfolio.html")
+
+@app.route("/cvgen", methods=['GET', 'POST'])
+def cvgen():
+	return render_template("cvgen.html")
+
 
 @app.route('/favicon.ico')
 def fav():

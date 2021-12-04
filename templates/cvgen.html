@@ -65,54 +65,58 @@
   <!-- <nav class="navbar navbar-dark bg-dark"> -->
   <!-- navbar navbar-expand-lg navbar-dark bg-dark -->
   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Hernan Gavilan - BI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('about') }}"><i class="fa fa-fw fa-user"></i>About</a>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Downloads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </nav>
 
   </header>
 
   <main>
-
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F03%2F09%2Fdog-dating-1.jpg" class="rounded-circle" alt="Cinque Terre" width="256" height="256">
-          <br>
-          <br>
-          <h1>Hernán Gavilán Acosta</h1>
-          <h4>Business Intelligence developer</p>
+    <br>
 
 
-              <p>
-                <a href="{{ url_for('about') }}" class="btn btn-secondary my-2">About</a>
-                <a href="{{ url_for('resume') }}" class="btn btn-primary my-2">Resume</a>
-                <a href="{{ url_for('portfolio') }}" class="btn btn-primary my-2">Portfolio</a>
-                <a href="#" class="btn btn-primary my-2">Downloads</a>
-                <a href="#" class="btn btn-primary my-2">Contact</a>
-              </p>
-            </div>
-          </div>
-        </section>
+    <div class="container-md">
+      <h1>Power BI - CV Generator</h1>
+      <br>
+      <iframe width="1153" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiNWYwM2E5M2MtNmUwZi00OGZhLTg2M2ItZTA3Y2VlMGVlNTVkIiwidCI6Ijk2NDhhMWI5LTkwODEtNDRmYi04MmQwLWVhMDFhYzg2MTc0OSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
 
-        <div class="container-md">
-          <h1>Welcome to my personal site!</h1>
-          <br>
-          <p>&nbsp &nbsp	I'm a software developer focused on data and business intelligence, passionate about the information hidden inside data and its relationships. My main goal is to deliver information and answers to key business questions, through transversal solutions that implement integrate, manipulation and representation of data.</p>
-          <br>
-          <p>&nbsp &nbsp Love to share with similar people to acquire and transmit knowledge, especially on topics such as data integration and data modeling, data warehousing, data visualization, as well as the technologies involved in such processes.</p>
-          <br>
-          <p class = "cursiveParagraph">Thanks for visiting!</p>
+    </div>
 
-        </div>
+  </main>
 
-      </main>
+  <footer class="text-muted py-5">
+    <div class="container">
 
-      <footer class="text-muted py-5">
-        <div class="container">
-
-        </div>
-      </footer>
+    </div>
+  </footer>
 
 
-      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    </html>
+</html>
